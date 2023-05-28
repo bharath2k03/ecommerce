@@ -1,6 +1,7 @@
 import {React,useState} from 'react';
 import { useHistory } from 'react-router-dom';
-import myImage from "./E2CWeb/src/components/assets/images/qrcodeminiproject.png";
+
+import myImage from "../../components/assets/images/qr1.png"
 import "./style.css"
 const Payment = () => {
   // const history = useHistory();
