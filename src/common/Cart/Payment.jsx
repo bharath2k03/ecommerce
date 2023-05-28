@@ -1,24 +1,28 @@
 import {React,useState} from 'react';
 import { useHistory } from 'react-router-dom';
+import myImage from "D:/E2CWeb/src/components/assets/images/qrcodeminiproject.png";
 import "./style.css"
 const Payment = () => {
-  const history = useHistory();
-  const [selectedOption, setSelectedOption] = useState('');
+  // const history = useHistory();
+  // const [selectedOption, setSelectedOption] = useState('');
 
-  const goBackToCart = () => {
-    history.push('/cart');
-  };
+  // const goBackToCart = () => {
+  //   history.push('/cart');
+  // };
 
   
     
   
-    const handleSelectChange = (event) => {
-      setSelectedOption(event.target.value);
-    };
+  //   const handleSelectChange = (event) => {
+  //     setSelectedOption(event.target.value);
+  //   };
 
   return (
+    <div>
     <div className='payment'>
+    
       <h2>Payment Page</h2>
+      <img style={{width: "200px", height: "200px"}} src={myImage}></img>
       {/* Add your payment page content */}
 {/* 
       <div>
@@ -34,8 +38,13 @@ const Payment = () => {
 <p class="selected-option">Selected option: {selectedOption}</p>
     </div> */}
       
+        
+      
       </div>
-
+      
+       
+      
+</div>
     
   );
 };

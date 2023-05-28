@@ -87,18 +87,18 @@ const Cart = ({ CartItem, addToCart, decreaseQty }) => {
             <h2>CheckOut</h2>
             
             <select class="custom-dropdown" value={selectedOption} onChange={handleSelectChange}>
-  <option value="">Select an option</option>
-  <option value="BTC">BTC</option>
-  <option value="SHIBA INU">SHIBA INU</option>
-  <option value="ETHEREUM">ETHEREUM</option>
-  <option value="MATIC">MATIC</option>
+  <option value="">Choose your crypto currency</option>
+  <option value={totalPrice*0.000037}>BTC</option>
+  <option value={totalPrice*117240}>SHIBA INU</option>
+  <option value={totalPrice*0.00054}>ETHEREUM</option>
+  <option value={totalPrice*1.09}>MATIC</option>
 </select>    
             
           
 
         
       
-<p class="selected-option">Selected option: {selectedOption}</p>
+<p class="selected-option">Total price: {selectedOption}</p>
 <div className=' d_flex'>
             <button className="button" onClick={redirectToPayment}>Place Your Order</button>
 
